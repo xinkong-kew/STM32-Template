@@ -334,7 +334,7 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls>--no-multibyte-chars</MiscControls>
-              <Define></Define>
+              <Define>USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
               <IncludePath>.\std_periph_driver\inc;.\user;.\my_lib;.\my_lib\font;.\my_lib\font\.h</IncludePath>
             </VariousControls>
@@ -556,11 +556,6 @@
               <FilePath>.\std_periph_driver\inc\stm32f10x_i2c.h</FilePath>
             </File>
             <File>
-              <FileName>stm32f10x_i2c.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\std_periph_driver\src\stm32f10x_i2c.c</FilePath>
-            </File>
-            <File>
               <FileName>stm32f10x_iwdg.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\std_periph_driver\inc\stm32f10x_iwdg.h</FilePath>
@@ -649,6 +644,11 @@
               <FileName>stm32f10x_wwdg.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\std_periph_driver\src\stm32f10x_wwdg.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x_i2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\std_periph_driver\src\stm32f10x_i2c.c</FilePath>
             </File>
           </Files>
         </Group>

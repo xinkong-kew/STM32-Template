@@ -1,16 +1,25 @@
 {
   "configurations": [
     {
-      "name": "windows-gcc-x64",
+      "name": "STM32-Keil",
       "includePath": [
-        "${workspaceFolder}/**"
+        "${workspaceFolder}/user",
+        "${workspaceFolder}/my_lib",
+        "${workspaceFolder}/std_periph_driver/inc",
+        "${workspaceFolder}/startup"
+      ],
+      "defines": [
+        "STM32F10X_MD",
+        "USE_STDPERIPH_DRIVER"
       ],
       "compilerPath": "R:/Trae CN/w64devkit/bin/gcc.exe",
-      "cStandard": "${default}",
-      "cppStandard": "${default}",
+      "cStandard": "c99",
+      "cppStandard": "c++11",
       "intelliSenseMode": "windows-gcc-x64",
-      "compilerArgs": [
-        ""
+      "excludePath": [
+        "${workspaceFolder}/Objects",
+        "${workspaceFolder}/DebugConfig",
+        "${workspaceFolder}/my_lib/font/ttfttc"
       ]
     }
   ],
